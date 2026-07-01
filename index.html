@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Juan Marcelo Virgili | Pastelería Artesanal</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header class="navbar" id="navbar">
+    <div class="container navbar__inner">
+      <a href="#home" class="navbar__brand">Juan Marcelo <span>Virgili</span></a>
+      <nav class="navbar__nav" id="navMenu">
+        <a href="#home">Inicio</a>
+        <a href="#productos">Productos</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+      <button class="navbar__toggle" id="navToggle" aria-label="Abrir menú">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <section class="hero" id="home">
+    <img src="cocinando.jpg" alt="Juan Marcelo Virgili preparando masa artesanal en su cocina profesional" class="hero__img">
+    <div class="hero__overlay"></div>
+    <div class="container hero__content">
+      <p class="hero__eyebrow">Pastelería artesanal desde el corazón</p>
+      <h1 class="hero__title">El arte de la pastelería,<br>hecho con pasión profesional</h1>
+      <p class="hero__text">
+        Con años de formación y experiencia en cocinas de alta pastelería, Juan Marcelo Virgili
+        combina técnica clásica e innovación para crear postres que emocionan en cada bocado.
+        Cada receta es el resultado de precisión, ingredientes de calidad y un compromiso real
+        con la excelencia.
+      </p>
+      <a href="#productos" class="btn btn--primary">Ver nuestros productos</a>
+    </div>
+  </section>
+
+  <section class="products" id="productos">
+    <div class="container">
+      <p class="section__eyebrow">Nuestra selección</p>
+      <h2 class="section__title">Los 10 clásicos que nunca fallan</h2>
+      <p class="section__subtitle">
+        Los productos de pastelería más pedidos del mercado, elaborados de forma artesanal.
+      </p>
+
+      <div class="products__grid">
+        <article class="product-card">
+          <div class="product-card__icon">🍫</div>
+          <h3>Torta de chocolate</h3>
+          <p>Bizcocho húmedo de cacao con ganache y relleno cremoso.</p>
+        </article>
+        <article class="product-card">
+          <div class="product-card__icon">🥐</div>
+          <h3>Croissants</h3>
+          <p>Hojaldre francés de mantequilla, crocante por fuera y tierno por dentro.</p>
+        </article>
+        <article class="product-card">
+          <div class="product-card__icon">🍪</div>
+          <h3>Alfajores</h3>
+          <p>Tapas de maicena rellenas de dulce de leche y bañadas en coco o chocolate.</p>
+        </article>
+        <article class="product-card">
+          <div class="product-card__icon">🧁</div>
+          <h3>Cupcakes</h3>
+          <p>Bizcochuelos individuales decorados con buttercream artesanal.</p>
+        </article>
+        <article class="product-card">
+          <div class="product-card__icon">🍰</div>
+          <h3>Cheesecake</h3>
+          <p>Base de galleta y crema de queso suave, en versión clásica o frutal.</p>
+        </article>
+        <article class="product-card">
+          <div class="product-card__icon">☕</div>
+          <h3>Tiramisú</h3>
+          <p>Capas de bizcocho embebido en café, mascarpone y cacao amargo.</p>
+        </article>
+        <article class="product-card">
+          <div class="product-card__icon">🟤</div>
+          <h3>Brownies</h3>
+          <p>Bizcocho denso de chocolate intenso, con nueces o sin ellas.</p>
+        </article>
+        <article class="product-card">
+          <div class="product-card__icon">🍓</div>
+          <h3>Tarta de frutas</h3>
+          <p>Base de masa quebrada, crema pastelera y frutas frescas de estación.</p>
+        </article>
+        <article class="product-card">
+          <div class="product-card__icon">🍩</div>
+          <h3>Donas</h3>
+          <p>Masa esponjosa frita, glaseada y decorada con toppings variados.</p>
+        </article>
+        <article class="product-card">
+          <div class="product-card__icon">🥮</div>
+          <h3>Macarons</h3>
+          <p>Merengue francés relleno de ganache o crema, en sabores variados.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact" id="contacto">
+    <div class="container contact__inner">
+      <div class="contact__photo">
+        <img src="fotojuan.jpg" alt="Juan Marcelo Virgili con su equipo de pastelería listo para viajar a cualquier lugar" loading="lazy">
+        <p class="contact__slogan">"La llevamos donde sea"</p>
+      </div>
+
+      <div class="contact__form-wrap">
+        <p class="section__eyebrow">Hablemos</p>
+        <h2 class="section__title">Contacto</h2>
+        <p class="section__subtitle">
+          Contanos qué estás celebrando y armamos juntos el postre perfecto para el momento.
+        </p>
+
+        <form class="contact__form" id="contactForm">
+          <div class="form__row">
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+          </div>
+          <div class="form__row">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="tu@email.com" required>
+          </div>
+          <div class="form__row">
+            <label for="telefono">Teléfono</label>
+            <input type="tel" id="telefono" name="telefono" placeholder="Tu teléfono">
+          </div>
+          <div class="form__row">
+            <label for="mensaje">Mensaje</label>
+            <textarea id="mensaje" name="mensaje" rows="4" placeholder="Contanos tu pedido o consulta" required></textarea>
+          </div>
+          <button type="submit" class="btn btn--primary btn--full">Enviar mensaje</button>
+          <p class="form__status" id="formStatus" role="status"></p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p>&copy; <span id="year"></span> Juan Marcelo Virgili · Pastelería Artesanal</p>
+      <p class="footer__slogan">La llevamos donde sea.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
